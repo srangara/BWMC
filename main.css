@@ -1,0 +1,175 @@
+/* Global styles */
+
+html {
+	overflow-y: scroll;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+}
+p {
+	margin: 0 0 1em 0;
+}
+figure {
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Header */
+
+header {
+	padding-bottom: 2em;
+	position: relative;
+	z-index: 10;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d21034+0,ed3237+100 */
+	background: #c93337; /* Old browsers */
+	background: -moz-linear-gradient(left, #c93337 0%, #ed3237 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #c93337 0%,#ed3237 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #c93337 0%,#ed3237 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c93337', endColorstr='#ed3237',GradientType=1 ); /* IE6-9 */
+	
+	color: #fff;
+}
+/* Resize to fit floats */
+header::after {
+	content: " ";
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+}
+#logo {
+	float: left;
+	margin: 0 1em 0 0;
+	width: 5em;
+	background: #fff;
+	border: 15px solid #fff;
+	border-radius: 0 0 50% 0/0 0 30% 0;
+	line-height: 0; /* Suppresses space at bottom of image */
+}
+
+/* Typography */
+
+p, h1, h2, h3, h4, h5, h6 {	
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;	
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.125;
+	-webkit-transition: font-size linear 0.25s;
+	-moz-transition: font-size linear 0.25s;
+	transition: font-size linear 0.25s; 
+}
+p {
+	font-size: 1em;
+	line-height: 1.4375;
+}
+h1 {
+	font-family: 'Caudex', serif;
+	font-size: 2em;
+}
+h2 {
+}
+
+/* Layout */
+
+section {
+	margin: 0 auto;
+	padding: 0 0.5em;
+}
+	@media only screen and (min-width: 400px) {
+	    section {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 700px) {
+	    section {
+		    max-width: 75%;
+	    }
+	}
+	
+	@media only screen and (min-width: 900px) {
+	    section {
+		    max-width: 72%;
+	    }
+	}
+	
+	@media only screen and (min-width: 1150px) {
+	    section {
+		    max-width: 864px;
+	    }
+	}
+	
+	@media only screen and (min-width: 1300px) {
+	    section {
+		    max-width: 900px;
+	    }
+	}
+
+/* Main content */
+
+main {
+	
+}
+section {
+	clear: both;
+	margin: 0 auto;
+	padding: 0 0.5em;
+	max-width: 864px;
+	width: 90%;
+}
+/* Resize to fit floats */
+section::after {
+	content: " ";
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+}
+a:link, a:visited {
+	color: #0e9952;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #1b5;
+	text-decoration: underline;
+}
+
+
+
+/* Footer */
+
+footer {
+	clear: both;
+}
+
+/* Navigation */
+
+nav {
+	margin: 0 auto;
+	max-width: 864px;
+	width: 90%;
+}
+nav li {
+	list-style-type: none;
+	display: inline-block;
+}
+nav a {
+	display: block;
+	border-left: 5px solid #0e9952;
+	padding: 0.5em;
+	text-decoration: none;
+}
+nav a:link, nav a:visited {
+}
+nav a:hover, nav a:active {
+}
